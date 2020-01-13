@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Numbers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        
+        <style>
+            body {
+                background-color: gainsboro;
+            }
+            table {
+                /* try with one margin set to 0 and the other at auto. */
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid tan;
+                background:silver;
+            }
+    
+            tr,th {
+                width: 35px;
+                height: 35px;
+                border: 1px solid tan;
+                background-color: white;
+                border-width: 1px;
+                border-style: solid ;
+                padding: 5px;
+                /*Notice the margin doesn't do anythign to our display */
+                margin: 100px;
+                font-size: 25   px;
+                font-weight: lighter;
+                color:tan;
+            }
+            #first{
+                -ms-grid-row-span: 3;
+                color: black;
+                background-color: silver;
+                border: 1px solid silver;
+            }
+            #footer  
+            {
+              column-span: 3;
+              font-size: 20px;
+              
+            }
+
+        </style>
+        <script>
+             var canvas, context;
+                canvas = document.getElementById('canvas');
+
+                if (canvas && canvas.getContext) {
+                context = canvas.getContext('2d');
+                context.beginPath();
+                context.moveTo(1, 1);
+                context.lineTo(1, 10);
+                context.lineTo(10, 1);
+                context.fill();
+                }
+        </script>
+        <canvas id="canvas" width="300" height="60" > </canvas>
+       <center> <h4>Te quedan 5 números</h4></center> 
+	</head>
+	<body>
+        <main>
+<table>
+        <tr>    
+            <th id="first">   A. </th>
+            <th>  10  </th>
+            <th>  20  </th>
+            <th> 30   </th>
+            <th>  40  </th>
+            <th>  50  </th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>11</th>
+            <th>21</th>
+            <th>31</th>
+            <th>41</th>
+            <th>51</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>12</th>
+            <th>22</th>
+            <th>32</th>
+            <th>42</th>
+            <th>52</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>13</th>
+            <th>23</th>
+            <th>33</th>
+            <th>43</th>
+            <th>53</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>14</th>
+            <th>24</th>
+            <th>34</th>
+            <th>44</th>
+            <th>54</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>15</th>
+            <th>25</th>
+            <th>35</th>
+            <th>45</th>
+            <th>55</th>
+        </tr>
+        <tr>
+            <th>6</th>
+            <th>16</th>
+            <th>26</th>
+            <th>36</th>
+            <th>46</th>
+            <th>56</th>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>17</th>
+            <th>27</th>
+            <th>37</th>
+            <th>47</th>
+            <th id="first"></th>
+        </tr>
+        <tr>
+            <th>8</th>
+            <th>18</th>
+            <th>28</th>
+            <th>38</th>
+            <th>48</th>
+            
+        </tr>
+        <tr>
+            <th>9</th>
+            <th>19</th>
+            <th>29</th>
+            <th>39</th>
+            <th>49</th>
+            
+        </tr>
+    
+
+</table>
+                <table id="footer">
+                    <tr>
+                        <th id="footer">ESCOGE</th>
+                        <th>DE NUEVO</th>
+                        
+                    </tr>
+                </table>
+        </main>
+    </body>
+</html>
